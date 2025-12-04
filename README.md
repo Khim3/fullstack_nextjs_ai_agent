@@ -1,5 +1,9 @@
 # Fullstack Nextjs-Langgraph Agent
 > **A production-ready Next.js template for building AI agents with LangGraph.js, featuring Model Context Protocol (MCP) integration, human-in-the-loop tool approval, and persistent memory.**
+<!-- add image for the app -->
+<p align="center">
+  <img src="assets/app_UI.png" alt="Fullstack Nextjs-Langgraph Agent UI" width="900" />
+</p>
 
 
 Complete agent workflow: user input → tool approval → execution → streaming response
@@ -28,10 +32,10 @@ Complete agent workflow: user input → tool approval → execution → streamin
 - Optional automatic approval mode for trusted setups  
 - Real-time streaming output with pauses at tool-call checkpoints  
 
-<!-- <div align="center">
-  <img src="docs/images/tool-approval.png" alt="Tool Approval Dialog" width="600" />
+<div align="center">
+  <img src="assets/hitl.png" alt="Tool Approval Dialog" width="600" />
   <p><em>A tool-approval interface showing detailed parameter review</em></p>
-</div> -->
+</div>
 
 ### **Persistent Conversation Memory**
 
@@ -116,6 +120,18 @@ python server.py
 
 Feel free to modify the `server.py` file to add or change MCP tools as needed. Restart the server after making changes. Or you could build your own MCP server in any language you prefer!
 
+## Screenshots of Real Usage
+<p align="center">
+  <img src="assets/file_list.png" alt="List file tool calling" width="900" />
+  <p><em>Initially, the agent calls the list file tool to display directory contents.</em></p>
+</p>
+<p align="center">
+  <img src="assets/tool_calling.png" alt="Agent Interaction Example" width="900" />
+  <p><em>Agent interacting with tools and providing responses.</em></p>
+</p>
+
+
+
 ## Usage Guide
 
 ### Adding MCP Servers
@@ -129,7 +145,7 @@ Feel free to modify the `server.py` file to add or change MCP tools as needed. R
    - **Args**: Provide any required arguments (e.g., `["/path/to/allow"]`)  
    - **URL**: Specify when using an HTTP-based MCP server  
 
-![Add MCP Server](docs/images/add-mcp-server.png)  
+![Add MCP Server](assets/add_tool.png)  
 *Example configuration screen for setting up a filesystem-based MCP server.*
 
 ### Example MCP Server Configurations
