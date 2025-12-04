@@ -45,3 +45,6 @@ next-env.d.ts
 .env.local
 .env
 ./text_env.txt
+
+# pycache
+__pycache__/
